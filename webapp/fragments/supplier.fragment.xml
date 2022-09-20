@@ -1,0 +1,44 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form">
+    <Table id="idTabSupp" items="{/SupplierSet}" itemPress="onSupplierSelect">
+        <headerToolbar>
+            <Toolbar>
+                <ToolbarSpacer/>
+                <Button icon="sap-icon://filter" tooltip="Filter Supplier" press="onFilterSupplier"></Button>
+            </Toolbar>
+        </headerToolbar>
+        <columns>
+            <Column>
+                <header>
+                    <Label text="ID"></Label>
+                </header>
+            </Column>
+            <Column>
+                <header>
+                    <Label text="City - Country"></Label>
+                </header>
+            </Column>
+            <Column minScreenWidth="Tablet">
+                <header>
+                    <Label text="Company Name"></Label>
+                </header>
+            </Column>
+            <Column minScreenWidth="Tablet" demandPopin="true">
+                <header>
+                    <Label text="Email Address"></Label>
+                </header>
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem type="Navigation">
+                <cells>
+                    <Text text="{BP_ID}"></Text>
+                    <Input value="{CITY} - {COUNTRY}" showValueHelp="true" valueHelpRequest="onF4Help"></Input>
+                    <Text text="{COMPANY_NAME}"></Text>
+                    <Text text="{EMAIL_ADDRESS}"></Text>
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</core:FragmentDefinition>

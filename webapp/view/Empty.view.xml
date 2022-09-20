@@ -1,0 +1,6 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+            controllerName="ats.fin.ar.controller.Empty">
+            <Page title="Start of my App">
+                <Image src="https://creativepark.canon/event/make-believe/images/shop-09.gif" width="95%" height="90%"></Image>
+            </Page>
+</mvc:View>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <!--Bootstrap to load SAPUI5 framework from CDN-->
+        <script src="https://ui5.sap.com/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-theme="sap_horizon_dark"
+                data-sap-ui-xx-bindingSyntax="complex"
+                data-sap-ui-resourceroots='{
+                        "ats.fin.ar" : "./"
+                }'
+        
+        >
+        </script>
+        <script>
+
+            var oCompContainer = new sap.ui.core.ComponentContainer({
+                name:'ats.fin.ar'
+            });
+
+            oCompContainer.placeAt("content")
+        </script>
+
+    </head>
+    <body class="sapUiBody">
+        <br>
+        <!--<div id="contentjs"></div>-->
+        <div id="content"></div>
+
+    </body>
+</html>
